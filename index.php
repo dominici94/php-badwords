@@ -11,6 +11,9 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
     // $censura = $_GET['dolor'];
     // $_GET['censura'];
     $nuovoParagrafo = str_replace( $_GET['censura'], '***', $mioParagrafo);
+
+    $mioArray = ['Alberto', 'Bobo', 'Cristiano', 'Davide'];
+    var_dump($mioArray);
 ?>
 
 <!DOCTYPE html>
@@ -27,6 +30,8 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
     <h2>inserisco la variabile</h2>
     <h3> <?php echo $nome; ?> </h3>
 
+    <br><br><br>
+
     <h4>Creazione paragrafo di testo tramite comando echo e stampa variabile</h4>
     <p> <?php echo($mioParagrafo); ?> </p>
 
@@ -34,7 +39,12 @@ Stampare di nuovo il paragrafo e la sua lunghezza, dopo aver sostituito con tre 
 
     <h4>La lunghezza della mia variabile paragrafo è: <?php echo(strlen($mioParagrafo)); ?> caratteri.</h4>
 
-    <h4>PARAGRAFO MODIFICATO: <?php echo $nuovoParagrafo ?></h4>
+    <br><br><br>
+
+    <h4>PARAGRAFO MODIFICATO:</h4>
+    <p> <?php echo $nuovoParagrafo ?> </p>
+
+    <h4>Stampa lunghezza paragrafo:</h4>
 
     <h4>La lunghezza della mia variabile paragrafo modificata è: <?php echo(strlen($nuovoParagrafo)); ?> caratteri.</h4>
 
